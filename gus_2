@@ -93,7 +93,7 @@ def top1_gus():
 				gus = 'top1:'+ gus
 				#print peo,gus
 				#itchat.send(gus,toUserName='zmb_nju')
-				#itchat.send(gus,toUserName='YY3214789650')
+				#itchat.send(gus,toUserName='YY')
 				return (1,gus)
 	return (0,'none')
 
@@ -119,21 +119,21 @@ if __name__ == '__main__':
 			flag3,gus = top1_gus()
 			if flag1 and flag3:
 				itchat.send(gus,toUserName='filehelper')
-				itchat.send(gus,toUserName='YY3214789650')			
+				itchat.send(gus,toUserName='YY')			
 				flag1 = 0
 
 		if (now_str>='13:20' and now_str<'14:46'):
 			flag3,gus = top1_gus()
 			if flag2 and flag3:
 				itchat.send(gus,toUserName='filehelper')
-				itchat.send(gus,toUserName='YY3214789650')			
+				itchat.send(gus,toUserName='YY')			
 				flag2 = 0
 
 
 		if now_str[:4]=='15:0':
 			realtime_stock = get_realtime_stock()
 			itchat.send(realtime_stock,toUserName='filehelper')
-			#itchat.send(realtime_stock,toUserName='YY3214789650')
+			#itchat.send(realtime_stock,toUserName='YY')
 			break
 		if now_str[:4]=='11:3':
 			realtime_stock = get_realtime_stock()
@@ -146,11 +146,11 @@ if __name__ == '__main__':
 				if int(now_str[-1])%2 == 0:
 					top_50gus = other_gus()
 					itchat.send(top_50gus,toUserName='filehelper')
-					itchat.send(top_50gus,toUserName='YY3214789650')
+					itchat.send(top_50gus,toUserName='YY')
 					
 					realtime_stock = get_realtime_stock()
 					itchat.send(realtime_stock,toUserName='filehelper')
-					#itchat.send(realtime_stock,toUserName='YY3214789650')
+					#itchat.send(realtime_stock,toUserName='YY')
 
 				
 				time.sleep(40)
