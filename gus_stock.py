@@ -100,7 +100,7 @@ def top1_gus():
 if __name__ == '__main__':
 	login()
 	time.sleep(2)
-	itchat.send('login success!',toUserName='zmb_nju')
+	itchat.send('login success!',toUserName='z_n')
 	flag1 = 1 
 	flag2 = 1
 
